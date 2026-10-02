@@ -45,12 +45,39 @@ export default function Sidebar({ mobileOpen, onClose }: SidebarProps) {
         borderColor: 'rgba(255,255,255,0.06)',
       }}
     >
-      <Box sx={{ px: 2.5, py: 3 }}>
+      {/*<Box sx={{ px: 2.5, py: 3 }}>
         <Typography variant="h6" color="white" sx={{ letterSpacing: -0.5, fontWeight: 700 }}>
-          MovieApp
+          FlexNet.
         </Typography>
-      </Box>
+      </Box>*/}
 
+      <Box sx={{ px: 2.5, py:3,
+      '@keyframes logoAnimation': {
+        '0%': {
+          opacity: 0, transform: 'translateY(-10px)',
+        },
+        '100%': {
+          opacity: 1,
+          transform: 'translateY(0)',
+        },
+      },
+      }}
+>
+<Typography variant="h6" sx={{
+  letterSpacing: -0.5,
+  fontWeight: 700,
+  color: 'white',
+  animation: 'logoAnimation 0.8s easeout',
+}}
+>
+  <Box component="span" sx={{
+    color:'red'}}>
+      Flex
+    </Box>
+      Net.
+</Typography>
+
+</Box>
       <List sx={{ px: 1.5, flex: 1 }}>
         {navItems.map((item) => (
           <ListItem key={item.to} disablePadding sx={{ mb: 0.5 }}>
