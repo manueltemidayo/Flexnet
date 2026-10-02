@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MovieApp
 
 A modern movie discovery web application built with React, TypeScript, and Material UI. Search for movies and TV series, browse trending content, and save your favorites.
@@ -95,3 +96,7 @@ The included `vercel.json` handles SPA routing automatically.
 ## License
 
 MIT
+
+# Flexnet
+Flexnet is a movie web app that allows users to be able to see popular movies and trending movie recommendations.
+>>>>>>> 3f10cf17b0c902f0e4a22996162d7262acf10111
